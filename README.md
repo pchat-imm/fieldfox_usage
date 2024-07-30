@@ -1,6 +1,10 @@
 # fieldfox_usage
-**date:** 30/07/2024 \
-**purpose:** note down how to use the [Fieldfox N9950B](https://www.keysight.com/us/en/product/N9950B/fieldfox-b-handheld-microwave-analyzer-32-ghz.html) \
+**Date:** 30/07/2024 \
+**Purpose:** note down how to use the [Fieldfox N9950B](https://www.keysight.com/us/en/product/N9950B/fieldfox-b-handheld-microwave-analyzer-32-ghz.html) \
+**Note:**
+- **good S11 should be below -20 dB and stable**
+- **good S21 should be below 0 dB and stable**
+if the statements above are not satisfied, **it could be from bad calibration, please calibrate again**
 
 ## Connect LAN between notebook and FieldFox N9950B 
 open the `control panel` and set IPV4 information as below
@@ -19,8 +23,9 @@ https://github.com/user-attachments/assets/c5deb68b-42aa-447f-8d81-fcf7deba2713
 ## Mechanical Calibration for NA
 we used two calibration kits to calibrate for mode `Network Analyzer (NA)`
 - **Anritsu Calibration Kit TOSLKF50A-20** Type K(f) DC to 20 GHz, 50 ohm
-- **Keysight Cal Kit 85561A 2.92 mm (f)** DC to 40 GHz \
+- **Keysight Cal Kit 85561A 2.92 mm (f)** DC to 40 GHz 
 <img src="https://github.com/user-attachments/assets/0c624a26-e56e-4f4e-a71d-0cc1663c34f6" width="50%" height="auto">
+
 ### for S11
 - select mode `NA`
 - select `measurement` as `S11`
@@ -41,8 +46,14 @@ https://github.com/user-attachments/assets/1e4d8da5-94c7-4b52-9488-e4257f6c8010
 
 ## example use case
 ### 0. benchmark 
-- **good S11 should be below -20 dB**
-- **good S21 should be below 0 dB**
+> **good S11 should be below -20 dB and stable** \
+> **good S21 should be below 0 dB and stable**
+
+if the statements above are not satisfied, could be from bad calibration, please calibrate again
+
+- measure S11 setup
+<img src="https://github.com/user-attachments/assets/eb6ea1ef-9e15-47a3-9e87-8530ac085343" width="auto" height="30%">
+
 - example of correct S11
 <img src="https://github.com/user-attachments/assets/77e9ae14-9868-4198-9b4c-3cb8543c857c" width="50%" height="auto">
 
