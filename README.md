@@ -2,9 +2,13 @@
 **Date:** 30/07/2024 \
 **Purpose:** note down how to use the [Fieldfox N9950B](https://www.keysight.com/us/en/product/N9950B/fieldfox-b-handheld-microwave-analyzer-32-ghz.html) \
 **Note:**
+### 1. NA (Network Analyzer)
 - **good S11 should be below -20 dB and stable**
 - **good S21 should be below 0 dB and stable**
 if the statements above are not satisfied, **it could be from bad calibration, please calibrate again**
+
+### 2. RTSA (Real-time Spectrum Analyzer)
+- **connect antenna to port 2!**
 
 ## Connect LAN between notebook and FieldFox N9950B 
 open the `control panel` and set IPV4 information as below
@@ -26,7 +30,7 @@ we used two calibration kits to calibrate for mode `Network Analyzer (NA)`
 - **Keysight Cal Kit 85561A 2.92 mm (f)** DC to 40 GHz 
 <img src="https://github.com/user-attachments/assets/0c624a26-e56e-4f4e-a71d-0cc1663c34f6" width="50%" height="auto">
 
-### for S11
+### NA for S11
 - select mode `NA`
 - select `measurement` as `S11`
 - set start and stop frequency
@@ -37,7 +41,7 @@ https://github.com/user-attachments/assets/2e666ab5-0949-46f3-9aad-2c744720c755
 
 https://github.com/user-attachments/assets/1e4d8da5-94c7-4b52-9488-e4257f6c8010
 
-### for S21
+### NA for S21
 - select mode `NA`
 - select `measurement` as `S21`
 - set start and stop frequency
@@ -47,19 +51,21 @@ https://github.com/user-attachments/assets/1e4d8da5-94c7-4b52-9488-e4257f6c8010
 ## example use case
 ### 0. benchmark 
 > **good S11 should be below -20 dB and stable** \
-> **good S21 should be below 0 dB and stable**
-
+> **good S21 should be below 0 dB and stable** \
 if the statements above are not satisfied, could be from bad calibration, please calibrate again
 
-- measure S11 setup
+- **measure S11 setup**
 <img src="https://github.com/user-attachments/assets/eb6ea1ef-9e15-47a3-9e87-8530ac085343" width="auto" height="30%">
 
-- example of correct S11
+#### S11 Calibration
+- **example of correct S11 calibration**
 <img src="https://github.com/user-attachments/assets/77e9ae14-9868-4198-9b4c-3cb8543c857c" width="50%" height="auto">
 
-- wrong S11 setup, require repeat of calibration
+- **wrong S11 calibration**, require repeat of calibration
 <img src="https://github.com/user-attachments/assets/a2639f6a-cad2-456f-a778-0a73477d96d8" width="50%" height="auto">
 
+- **Example of function antenna in S11 info**
+<img src="https://github.com/user-attachments/assets/d06422de-1dc0-4427-9695-9951c74be6c6" width="50%" height="auto">
 
 ### 1. Measure S21 and S11 of 4 cables to see if the cables are working or not
 - test setup 
